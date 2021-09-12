@@ -1,0 +1,76 @@
+/*This code contains the testimonials section of our website */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* testimonials start here now. */
+#testimonials
+{
+    width: 100%;
+    padding: 70px 0;
+}
+.testimonial-row
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-column
+{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+    transition: transform 0.5s;/*for the twitter user cards*/ 
+}
+.testimonial-column p
+/*user cars where it looks like a twitter quote */
+{
+    font-size: 15px;
+}
+.user
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img
+{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.user-info .fa
+{
+    margin-left: 10px;
+    color: #27c0ff;
+    font-size: 20px;
+}
+.user-info small
+{
+    color: #009688;
+}
+/* add hover effect on the twitter comments to nove up on hover */
+.testimonial-column:hover
+{
+    transform: translateY(7px);/*goes down by 7px*/
+    /* transform: translateY(-7px); goes up by 7px */
+}
+
+@media screen and (max-width: 770px)
+{
+ .testimonial-column
+    {
+        flex-basis: 100%;
+    }
+    
+}

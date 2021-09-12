@@ -1,0 +1,117 @@
+/*This code contains the services section of our website */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Services start here */
+
+
+
+/*Services end here */
+#service
+{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+.service-box
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service
+{
+    flex-basis: 48%;/*so that we can have two services in one row*/
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.single-service img
+{
+    width: 100%;
+    border-radius: 7px;
+}
+.single-service iframe
+{
+    width: 100%;
+    height: 450px;
+    border-radius: 7px;
+}
+/*adding an overlay on our images.*/
+.overlay
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5), #009688);
+    opacity: 0;
+    transition: 1s;
+}
+.single-service:hover .overlay
+{
+    opacity: 1;
+}
+/*hiding the service description to display on hover */
+.service-desc
+{
+    width: 80%;
+    position: absolute;
+    /*bottom: 40%;  use this when you dont want to hide the text on hover*/
+    opacity: 0;/**/
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;/**/
+}
+hr
+{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.service-desc p
+{
+    font-size: 15px;
+}
+/*hide text and apear on hover */
+.single-service:hover .service-desc
+{
+    bottom: 40%;
+    opacity: 1; /**/
+}
+
+
+@media screen and (max-width: 770px)
+{
+    .single-service
+{
+    flex-basis: 100%;/*so that we can have one service in a row*/
+    margin-bottom: 30px;
+    }
+    .service-desc p
+{
+    font-size: 12px;
+}
+    hr
+    {
+        margin: 5px auto;
+    }
+    .single-service:hover .service-desc
+{
+    bottom: 34%;
+}
+}

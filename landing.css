@@ -1,0 +1,155 @@
+/*This csss file styles completely the top part which includes, logo, navbar links, background photo, and headings. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#preloader
+{
+    height: 100vh;
+    width: 100%;
+   background: #009688 url(images/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    position: fixed;
+    z-index: 100;
+    
+}
+
+/*landing page starts here now */
+
+#landing
+{
+    background: linear-gradient(rgba(0,0,0,0.4), #009688) ,url(images/picpallete.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+.logo
+{
+    color: #fff;
+    font-size: 20px;
+    width: 145px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+.landing-text
+{
+    color: #fff;
+    text-align: center;
+    padding-top: 180px;
+}
+.landing-text h1
+{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+}
+.landing-text p
+{
+    font-size: 25px;
+    font-style: italic;
+}
+/*the two buttons at the screen */
+.landing-btn
+{
+    margin: 70px auto 0;
+}
+.landing-btn a
+{
+   width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: 0.5px solid white;
+    position: relative;/*so that span will be in the anchor tag */
+    z-index: 1;
+    transition: color 0.5s; /*ensures that on hover our a tag changes to color clack to be sisible */
+}
+/* span is for the white overlay on the two btn*/
+.landing-btn a span
+{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+.landing-btn a:hover span
+{
+    width: 100%;
+}
+.landing-btn a:hover 
+{
+    color: #000;
+}
+
+/*the side navigation bar now */
+#sideNav
+{
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li
+{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+/*now the menu btn*/
+#menubtn
+{
+   width: 50px;
+    height: 50px;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img
+{
+    width: 20px;
+    margin-top: 15px;
+}
+
+/*media query for the top part start here */
+
+@media screen and (max-width: 770px)
+{
+    .landing-text h1
+{
+    font-size: 44px;
+    font-family: 'Kaushan Script', cursive;
+}
+    .landing-btn a
+    {
+        display: block;
+        margin: 20px auto;
+    }
+    
+}
+
+/*media query for the top part end here*/

@@ -1,0 +1,147 @@
+
+body{
+	line-height: 1.5;
+	font-family: 'poppins',sans-serif;
+}
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.middle
+{
+    align-content: center;
+    padding: 15px;
+    font-size: 25px;
+}
+img{
+	max-width: 100%;
+    min-height: 280px;
+	vertical-align: middle;
+    border-radius: 9px;
+    transition: transform 0.5s;
+}
+img:hover
+{
+    transform: translateY(-7px);
+}
+/*.gallery*/
+.gallery{
+	width: 100%;
+	display: block;
+	min-height: 100vh;
+	/*background-color: #2a2932; */
+        background-color: #fff;
+	padding: 100px 0;
+}
+.gallery .gallery-filter{
+	padding: 0 15px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.gallery .gallery-filter .filter-item{
+	color: #000;/*#ffffff;*/
+	font-size: 18px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin:0 10px;
+	cursor: pointer;
+	border-bottom: 2px solid transparent;
+	line-height: 1.2;
+	transition: all 0.3s ease;
+}
+.gallery .gallery-filter .filter-item.active{
+	color: #ff9800;
+	border-color : #ff9800;
+}
+.gallery .gallery-item{
+	width: calc(100% / 3);
+	padding: 15px;
+}
+.gallery .gallery-item-inner img{
+	width: 100%;
+    height: 400px;
+}
+.gallery .gallery-item.show{
+	animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.gallery .gallery-item.hide{
+	display: none;
+}
+.title-text
+{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p
+{
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+/*forms styling for the top customised icon on all headings */
+.title-text p::after
+{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587, #fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.title-text h1
+{
+    font-size: 50px;
+}
+
+
+
+/*responsive*/
+@media(max-width: 990px){
+	.gallery .gallery-item{
+		width: 50%;
+	}
+}
+@media(max-width: 767px){
+    .gallery .gallery-item{
+		width: 100%;
+	}	
+	.gallery .gallery-filter .filter-item{
+		/*margin-bottom: 10px; */
+        
+	}
+    .middle
+    {
+        font-size: 20px;
+    }
+    .gallery-item-inner
+    {
+        margin: 12px;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*html
+{
+    font-family: 'Poppins', sans-serif; */
+} 
+.whoweare
+{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* background: #fddcc356; */
+    background: #fff; 
+}
+#container
+{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left
+{
+    width: 50%;
+    height: 600px;
+    background: url(images/2dmodelling1.png)  no-repeat center / cover;
+    border-radius: 9px;
+}
+.right
+{
+    width: 50%;
+    min-height: 400px;
+   /* background:  #2f3d3c;*/
+    background:  #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 9px;
+    color: #fff;
+    margin-left: -100px;
+}
+.right h1
+{
+    font-size: 35px;
+    font-weight: lighter;
+    padding: 10px;
+}
+.right p
+{
+    font-weight: 500;
+    margin-bottom:  20px;
+    line-height: 25px;
+}
+.btn a span
+{
+    margin: 70px auto 0;
+}
+.right a
+{
+     width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: 0.5px solid white;
+    position: relative;/*so that span will be in the anchor tag */
+    z-index: 1;
+    transition: color 0.5s; /*ensures that on hover our a tag changes to color clack to be sisible */
+}
+.right a span
+{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+.right a:hover span
+{
+    width: 100%;
+}
+.right a:hover 
+{
+    color: #000;
+}
+@media only screen and (max-width: 770px)
+{
+    #container
+    {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    .left
+    {
+        width: 100%;
+        height: 500px;
+    }
+    .right
+    {
+        width: 80%;
+        margin: 0;
+        margin-top: -100px;
+    }
+    .right h1
+    {
+       font-size: 30px;
+    font-weight: lighter;
+    padding: 10px;
+    }
+    .right p
+    {
+        font-size: 15px;
+       font-weight: 500;
+    margin-bottom:  20px;
+    line-height: 25px;
+    }
+     .right a
+    {
+        padding: 15px 20px;
+    display: block;
+    letter-spacing: 2px;
+    }
+}
