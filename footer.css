@@ -10,7 +10,7 @@
 /* footer start here now. */
 #footer
 {
-    padding: 100px 0 20px;
+    padding: 6.25rem 0 1.25rem;
     background: #efefef;
     position: relative;
 }
@@ -25,8 +25,8 @@
 .footer-left,.footer-right
 {
     flex-basis: 45%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
 }
 .footer-right
 {
@@ -41,25 +41,25 @@
 {
     color: #fff;
     background: #009688;
-    font-size: 17px;
+    font-size: 1.0625rem;
 }
 .footer-row h1
 {
-    margin: 10px 0;
+    margin: 0.625rem 0;
 }
 .footer-row p
 {
-   line-height: 35px;
+   line-height: 2.1875rem;
 }
 .footer-left .fa,.footer-right .fa
 {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #009688;
-    margin: 10px;
+    margin: 0.625rem;
 }
 .footer-img
 {
-    max-width: 370px;
+    max-width: 23.125rem;
     opacity: 0.5;
     position: absolute;
     left: 50%;
@@ -72,12 +72,12 @@
 }
 .social-links .fa
 {
-  height: 40px;
-width: 40px;
- line-height: 40px;
-font-size: 20px;
-border: 1px solid #009688;
-    margin: 40px 5px 0;
+  height: 2.5rem;
+width: 2.5rem;
+ line-height: 2.5rem;
+font-size: 1.25rem;
+border: 0.0625rem solid #009688;
+    margin: 2.5rem 0.3125rem 0;
     color: #009688;
     cursor: pointer;
     transition: 0.5s;
@@ -86,33 +86,33 @@ border: 1px solid #009688;
 {
     background: #009688;
     color: #fff;
-    transform: translateY(-7px);
+    transform: translateY(-0.4375rem);
     
 }
 .social-links p
 {
-    font-size: 13px;
-    margin-top: 20px;
+    font-size: 0.8125rem;
+    margin-top: 1.25rem;
 }
 .desgnedby p a
 {
     text-decoration: none;
     color: #000;
-   font-size: 20px; 
+   font-size: 1.25rem; 
 }
 .desgnedby p a:hover
 {
     background: #009688;
     color: #fff;
-    transform: translateY(-7px); 
+    transform: translateY(-0.4375rem); 
 }
 
-@media screen and (max-width: 770px)
+@media screen and (max-width: 48.125rem)
 {
     .footer-left,.footer-right
 {
     flex-basis: 100%;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
     .footer-img
     {
