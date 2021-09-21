@@ -11,17 +11,17 @@
 #features
 {
     width: 100%;
-    padding: 70px 0;
+    padding: 4.375rem 0;
 }
 .title-text
 {
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 4.375rem;
 }
 .title-text p
 {
     margin: auto;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #009688;
     font-weight: bold;
     position: relative;
@@ -32,20 +32,20 @@
 .title-text p::after
 {
     content: '';
-    width: 50px;
-    height: 35px;
+    width: 3.125rem;
+    height: 2.1875rem;
     background: linear-gradient(#019587, #fff);
     position: absolute;
-    top: -20px;
+    top: 1.25rem;
     left: 0;
     z-index: -1;
     transform: rotate(10deg);
-    border-top-left-radius: 35px;
-    border-bottom-right-radius: 35px;
+    border-top-left-radius: 2.1875rem;
+    border-bottom-right-radius: 2.1875rem;
 }
 .title-text h1
 {
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 .feature-box
 {
@@ -68,12 +68,12 @@
 .features-img img
 {
     width: 70%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 .features h1
 {
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     font-weight: 100;
     color: #009688;
 }
@@ -81,30 +81,30 @@
 {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 .feature-icon .fa
 {
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    line-height: 50px;
-    border-radius: 8px;
+    width: 3.125rem;
+    height: 3.125rem;
+    font-size: 1.875rem;
+    line-height: 3.125rem;
+    border-radius: 0.5rem;
     color: #009688;
     border: 1px solid #009688; 
 }
 .feature-text p
 {
-    padding: 0 20px;
+    padding: 0 1.25rem;
     text-align: initial;
 }
 /*features end here*/
 
-@media screen and (max-width: 770px)
+@media screen and (max-width: 48.125rem)
 {
     .title-text h1
 {
-    font-size: 35px;
+    font-size: 2.1875rem;
 }
     .features
 {
