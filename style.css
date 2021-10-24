@@ -1,4 +1,3 @@
-/*I used a desktop first approach to design*/
 
 body{
 	line-height: 1.5;
@@ -118,6 +117,12 @@ img:hover
 .title-text h1
 {
     font-size: 50px;
+}
+.concepts
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 14px;
 }
 
 
