@@ -1,5 +1,3 @@
-/*this section contains styling for who are we section. I used a desktop first approach to design*/
-
 *{
     margin: 0;
     padding: 0;
@@ -33,7 +31,7 @@
 {
     width: 50%;
     height: 600px;
-    background: url(images/2dmodelling1.png)  no-repeat center / cover;
+    background: url(images/pesa1.jpg)  no-repeat center / cover;
     border-radius: 9px;
 }
 .right
