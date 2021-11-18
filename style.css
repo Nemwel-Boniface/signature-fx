@@ -123,6 +123,7 @@ img:hover
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 14px;
+    max-width: 100%;
 }
 
 
@@ -132,8 +133,20 @@ img:hover
 	.gallery .gallery-item{
 		width: 50%;
 	}
+    .concepts .video-concepts
+    {
+        display: block;
+        max-width: 100%;
+    }
 }
 @media(max-width: 767px){
+    .video-concepts iframe
+    {
+        display: block;
+        max-width: 100%;
+    }
+    
+    
     .gallery .gallery-item{
 		width: 100%;
 	}	
@@ -149,5 +162,10 @@ img:hover
     {
         margin: 12px;
         padding: 12px;
+    }
+    .concepts
+    {
+        display: block;
+        max-width: 100%;
     }
 }
