@@ -10,24 +10,24 @@
 {
     height: 100vh;
     width: 100%;
-   background: #009688 url(images/preloader.gif);
+   background: #009688 url(../images/preloader.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20%;
     position: fixed;
     z-index: 100;
-    
+
 }
 
 /*landing page starts here now */
 
 #landing
 {
-    background: linear-gradient(rgba(0,0,0,0.4), #009688) ,url(images/picpallete.png);
+    background: linear-gradient(rgba(0,0,0,0.4), #009688) ,url(../images/picpallete.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
-    
+
 }
 .logo
 {
@@ -88,7 +88,7 @@
 {
     width: 100%;
 }
-.landing-btn a:hover 
+.landing-btn a:hover
 {
     color: #000;
 }
@@ -149,7 +149,7 @@ nav ul li a
         display: block;
         margin: 20px auto;
     }
-    
+
 }
 
 /*media query for the top part end here*/

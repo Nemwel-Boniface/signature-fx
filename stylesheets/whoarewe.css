@@ -6,7 +6,7 @@
 /*html
 {
     font-family: 'Poppins', sans-serif; */
-} 
+}
 .whoweare
 {
     min-height: 100vh;
@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
    /* background: #fddcc356; */
-    background: #fff; 
+    background: #fff;
 }
 #container
 {
@@ -31,7 +31,7 @@
 {
     width: 50%;
     height: 600px;
-    background: url(images/pesa1.jpg)  no-repeat center / cover;
+    background: url(../images/pesa1.jpg)  no-repeat center / cover;
     border-radius: 9px;
 }
 .right
@@ -92,7 +92,7 @@
 {
     width: 100%;
 }
-.right a:hover 
+.right a:hover
 {
     color: #000;
 }
