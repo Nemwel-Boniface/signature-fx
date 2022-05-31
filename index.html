@@ -268,7 +268,7 @@
         <p>Feedback</p>
         <h1>We provide better experience.</h1>
         </div>
-       <h1 class="jumbo">Contact us.</h1>
+       <!-- <h1 class="jumbo">Contact us.</h1>
            <hr class="hrround">
        <p>For any Queries, suggestions, business proposal do leave us a message by filling  the form below:</p><br>
  <form action="https://formspree.io/f/xlezgjrb" method="POST"">
@@ -307,7 +307,24 @@
    <div class="row">
      <input type="submit" value="Submit">
    </div>
- </form>
+ </form> -->
+ <section class="contactForm">
+    <div class="contactFormLeft">
+      <img src="./images/designsetup.jpg" alt="Signature fx">
+    </div>
+    <div class="contactFormRight">
+      <h2>Send us a message</h2>
+      <form action="https://formspree.io/f/xlezgjrb" method="post" class="form" id="form">
+        <input id="names" type="text" name="names" placeholder="Your names*" required>
+        <small class="namesSmall"></small>
+        <input id="email" type="email" name="email" placeholder="Your email*" required>
+        <small id="emailSmall"></small>
+        <input type="tel" name="telephone" placeholder="Your mobile number">
+        <textarea name="message" placeholder="Your message" minlength="1" maxlength="500"></textarea>
+        <button type="submit"><i class="fa fa-check" aria-hidden="true"></i>Consult today</button>
+      </form>
+    </div>
+  </section>
 </div>
 
     <!--Contact us section ends here now -->
