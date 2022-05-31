@@ -39,6 +39,8 @@
 {
     width: 100%;
     border-radius: 7px;
+    /* height: 40%; */
+    object-fit: cover;
 }
 .single-service iframe
 {
